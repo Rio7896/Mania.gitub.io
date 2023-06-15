@@ -122,6 +122,23 @@
         border-radius: 20px;
 
     }
+    #read{
+        font-size:30px;
+        color:red;
+        font-weight:400;
+        text-shadow: 0 0 30px black;
+        animation:beat 5s infinite alternate;
+    }
+    @keyframes beat{
+        50%{
+            color:blue;
+            text-shadow: 0 0 20px black;
+        }
+        100%{
+            color:aqua;
+            text-shadow: 0 0 20px black;
+        }
+    }
 </style>
 <body onload="stop()">
     <center>
@@ -137,6 +154,9 @@
     </div>
     <br> 
     <button onclick="run()">Click Me</button>
+    
+   <br>
+   <div id="read"></div>
     </center>
     <script>
         let a=document.getElementById("loader")
@@ -152,9 +172,9 @@
             let c=document.getElementsByClassName("mouth")
             c[0].classList.add("cmouth");
 
-            
+            let  write=document.querySelector("#read");
+            write.innerHTML=" <br> <b>Good Morning</b><br>&hearts;";     
         }
     </script>
-
 </body>
 </html>
