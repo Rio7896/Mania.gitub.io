@@ -2,179 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rio Games</title>
-    <link rel="icon" href="Scientist.jpg"
-   
-</head>
-<style>
-    body{
-        margin:0%;  
-    }
-    header #home{
-        font-size: 1.5rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight:900;
+    <title>Project</title> 
+    <link rel="icon" href="heart.png">
+    <style>
+        body{
+            margin: 0%;
+            background-color: rgb(0, 0, 0);
+        }
+        .header{
+            background-color: rgb(37, 48, 114);
+            width:413px;
+            color:#fff;
+            height:50px;
+        }
+        h1{
+            font-weight:900;
+            font-size: 45px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       
+       h1{
         color:#fff;
-        transition:.2s;    
-    }
-    header #home:hover{
+        font-size:35px;
+        font-family:Arial, Helvetica, sans-serif;
+       }
+       .bold{
         color:red;
-    }
-    header{
-        background-color: #000;
-        height:2.3rem;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        width:412px;
-    }
-    #loader{
-        width:9rem;
-        height:9rem;
-        border: 10px solid rgb(121, 121, 121);
-        border-radius: 50%;
-        position: relative;
-        top:10rem;
-        border-right: 12px solid rgb(12, 231, 247);
-        animation:loader .4s linear infinite;
-    }
-    @keyframes loader{
-        100%{
-            rotate:360deg;
-        }
-    }
-    body{
-        background-image:linear-gradient(pink,rgba(224, 224, 18,.5));
-        background-repeat: no-repeat;
-        background-position: center;
-        height:915px;
-        width:412px; 
-    }
-    .smile{
-        background-color:rgb(235, 213, 14) ;
-        width:250px;
-        height:250px;
-        border-radius: 50%;
-        position: relative;
-        transition: 5s;
-    }
-    .smile .eye{
-        width:40px;
-        height:40px;
-        background-color: rgb(0, 0, 0);
-        position: absolute;
-        left:50px;
-        top:60px;
-        border-radius: 20px 20px 0px 0px; 
-    }
-    @keyframes eye{
-        to{
-            border-radius:50%;
-        }
-    }
-    @keyframes eye2{
-        to{
-            border-radius:50%;
-        }
-    }
-    .smile .eye2{
-        width:40px;
-        height:40px;
-        background-color: rgb(0, 0, 0);
-        position: absolute;
-        left:160px;
-        top:60px;
-        border-radius: 20px 20px 0px 0px;  
-    }
-    .smile .mouth{
-        width:110px;
-        height:50px;
-        background-color: grey;
-        position: absolute;
-        left:70px;
-        top:150px;
-        border-radius: 40px 40px 0px 0px;
-    }
-    @keyframes mouth{
-        to{
-            border-radius: 0px 0px 40px 40px ;
-        }
-    }
-    .aeye{
-        animation:eye 5s infinite alternate;
-    }
-    .beye{
-        animation:eye2 5s infinite alternate;
-    }
-    .cmouth{
-        animation:mouth 5s infinite alternate;
-    }
-    button{
-        background-color: #000;
-        width:100px;
-        height:40px;
-        font-size:20px;
+        font-size:35px;
+       }
+       button{
         color:#fff;
-        font-weight: 500;
-        border-radius: 20px;
+        width:7rem;
+        background-color:rgba(255, 255, 255, 0.2);
+        font-size:25px;
+        margin-right:10px;
+        
 
-    }
-    #read{
-        font-size:30px;
-        color:red;
-        font-weight:400;
-        text-shadow: 0 0 30px black;
-        animation:beat 5s infinite alternate;
-    }
-    @keyframes beat{
-        50%{
-            color:blue;
-            text-shadow: 0 0 20px black;
-        }
-        100%{
-            color:aqua;
-            text-shadow: 0 0 20px black;
-        }
-    }
-</style>
-<body onload="stop()">
+       }
+    </style>
+</head>
+<body>
     <center>
-    <header>
-        <b id="home">Gaming Mania</b>
-    </header>
-    <div id="loader"></div>
-    <br>
-    <div class="smile">
-        <div class="eye"></div>
-        <div class="eye2"></div>
-        <div class="mouth"></div>
-    </div>
-    <br> 
-    <button onclick="run()">Click Me</button>
+    <div class="header"></div>
     
-   <br>
-   <div id="read"></div>
+    
+    <img src="b26f82fc-4f31-4098-b2b1-f79424993558.jfif" height="300" width="300" class="img">
+    <br>
+    <h1><b class="bold">B</b>ecome<b class="bold"> T</b>opper</h1>
+    <br>
+    <button onclick="run()">Click</button> <button onclick="run()">Click</button>
     </center>
     <script>
-        let a=document.getElementById("loader")
-        a.style.display = "none";
-
         function run(){
-            let a=document.getElementsByClassName("eye")
-            a[0].classList.add("aeye");
-
-            let b=document.getElementsByClassName("eye2")
-            b[0].classList.add("beye");
-
-            let c=document.getElementsByClassName("mouth")
-            c[0].classList.add("cmouth");
-
-            let  write=document.querySelector("#read");
-            write.innerHTML=" <br> <b>Good Morning</b><br>&hearts;";     
+            alert("Welcome");
         }
     </script>
+    
 </body>
 </html>
