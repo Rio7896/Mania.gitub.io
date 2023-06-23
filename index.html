@@ -21,7 +21,6 @@
             font-size: 45px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-       
        h1{
         color:#fff;
         font-size:35px;
@@ -37,27 +36,94 @@
         background-color:rgba(255, 255, 255, 0.2);
         font-size:25px;
         margin-right:10px;
-        
-
        }
+       
+       
+        
+      
+        
+       
+         
+       
+       .nav {
+        position: absolute;
+        background-color: #fff;
+        width:200px;
+        top:50px;
+         left:-100%;
+        height:100vh;
+        transition: 1s;
+        text-align: center;
+        
+       }
+       #check{
+        position: absolute;
+        float: left;
+        display: none;
+       }
+       /*Here Iam use the checkbox this as a id #check and position is absolute*/
+       
+       
+       h1{
+        text-decoration: none;
+        
+       }
+       .contain{
+        display:inline-block;
+       }
+       #check:checked ~ .nav{
+        left:0%;
+       }
+       .nav .contain b a{
+        line-height: 50px;
+        list-style: none;
+        width: 200px;
+       
+        text-decoration: none;
+       }
+       label img{
+       color:blue;
+        position: absolute;
+       }
+       
     </style>
 </head>
 <body>
+    <input type="checkbox" id="check">
+    <label for="check"><img src="menu.svg" width="40" height="40"></label>
+    <nav class="nav">
+        <center>
+            <div class="contain">
+         
+            <b><a href="#">Home</b>
+                <br>
+            <b><a href="#">Form</b>
+                <br>
+            <b><a href="#">Contact</b>
+                <br>
+            <b><a href="#">About</b>
+                <br>
+        
+         </div>
+      </center>
+    </nav>
     <center>
-    <div class="header"></div>
-    
-    
+    <div class="header">
+        
+        
+    </div>
     <img src="b26f82fc-4f31-4098-b2b1-f79424993558.jfif" height="300" width="300" class="img">
     <br>
     <h1><b class="bold">B</b>ecome<b class="bold"> T</b>opper</h1>
     <br>
     <button onclick="run()">Click</button> <button onclick="run()">Click</button>
     </center>
+    <br>
+    
     <script>
         function run(){
             alert("Welcome")
         }
     </script>
-    
 </body>
 </html>
